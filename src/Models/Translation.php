@@ -21,6 +21,7 @@ class Translation extends Model
         parent::__construct($attributes);
 
         $this->setConnection(config('translator.connection'));
+        $this->setTable(config('translator.translator_translations_table', $this->table));
     }
 
     /**
