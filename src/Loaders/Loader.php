@@ -12,7 +12,7 @@ abstract class Loader implements LoaderContract
      *
      * @var string|null
      */
-    protected ?string $path;
+    protected ?string $path = null;
 
     /**
      * Zarejestrowane przestrzenie nazw → ścieżki.
