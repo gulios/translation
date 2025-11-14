@@ -8,6 +8,20 @@ use Waavi\Translation\Repositories\TranslationRepository;
 abstract class Loader implements LoaderContract
 {
     /**
+     * The path to the language files (dla loaderów plikowych / miksowanych).
+     *
+     * @var string|null
+     */
+    protected ?string $path;
+
+    /**
+     * Zarejestrowane przestrzenie nazw → ścieżki.
+     *
+     * @var array<string,string>
+     */
+    protected array $hints = [];
+
+    /**
      * The default locale.
      *
      * @var string
