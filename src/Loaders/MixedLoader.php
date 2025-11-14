@@ -2,6 +2,8 @@
 
 class MixedLoader extends Loader
 {
+    protected array $hints = [];
+
     /**
      *  The default locale.
      *  @var string
